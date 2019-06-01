@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Welcome to the Game
+  p Your userId is #{socketId}
+  script(src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js")
+  script(src = "/public/javascripts/welcome.js")
